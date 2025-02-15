@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-ml-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fastapi-ml
+  template:
+    metadata:
+      labels:
+        app: fastapi-ml
+    spec:
+      containers:
+        - name: fastapi-ml-container
+          image: ayushtiwari2722/fastapi-ml:latest  # Use your Docker Hub image
+          ports:
+            - containerPort: 8000
