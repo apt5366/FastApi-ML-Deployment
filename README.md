@@ -7,6 +7,8 @@ This project deploys an ML model using FastAPI, Docker, and Kubernetes.
 - REST API tested with **Postman**
 - Model trained using **Scikit-Learn**
 
+(Thisngs to remember, for Minikube to run, need to disable firewall on McCafee AntiVirus)
+
 ## 🔹 Setup
 ```bash
 git clone https://github.com/your-username/fastapi-ml-deployment.git
